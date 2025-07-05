@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo tecnológico escuro com partículas */
+body {
+  background: linear-gradient(120deg, #181c2f 0%, #23243a 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #e3e6f3;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(100,125,222,0.10) 0, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(127,83,172,0.08) 0, transparent 70%),
+    radial-gradient(circle at 60% 10%, rgba(100,125,222,0.06) 0, transparent 80%);
+  z-index: 0;
+}
+
+/* Cabeçalho moderno */
+header {
+  background: linear-gradient(90deg, #0f2027 0%, #2c5364 60%, #7f53ac 100%);
+  color: #fff;
+  padding: 36px 0 28px 0;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  box-shadow: 0 6px 32px 0 rgba(100, 125, 222, 0.18);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 2px 12px #23243a80;
+}
+
+/* Formulário moderno */
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 48px auto 32px;
+  width: 92%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+input[type="text"], input[type="tel"], .form-row button {
+  flex: 1;
+  min-width: 240px;
+  max-width: 280px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(100, 125, 222, 0.10);
+  outline: none;
+  border: none;
+}
+
+input[type="text"], input[type="tel"] {
+  background: #23243a;
+  color: #e3e6f3;
+  transition: box-shadow 0.18s, border 0.18s;
+}
+
+input:focus {
+  box-shadow: 0 4px 18px 0 rgba(127, 83, 172, 0.18);
+  border: 1.5px solid #7f53ac;
+}
+
+/* Botão principal */
+button {
+  background: linear-gradient(90deg, #7f53ac 0%, #647dee 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.18s, box-shadow 0.18s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5f2c82 0%, #49a09d 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px 0 rgba(127, 83, 172, 0.22);
+}
+
+/* Botão de limpar */
+#limparTabela {
+  display: block;
+  margin: 0 auto 24px;
+  max-width: 280px;
+  padding: 12px;
+  background: #ff4d4d;
+  box-shadow: 0 4px 18px rgba(255, 77, 77, 0.18);
+}
+
+#limparTabela:hover {
+  background: #d9303
